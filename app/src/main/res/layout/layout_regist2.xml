@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_login_bg"
+    android:orientation="vertical">
+    <!--head-->
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/x18"
+                android:layout_height="@dimen/y35"
+                android:layout_marginLeft="@dimen/x25"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/icon_fanhui" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x34" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x26"
+            android:textColor="@drawable/selector_btn_white_tx_"
+            android:textSize="@dimen/x34" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@id/head"
+        android:id="@+id/logo"
+        android:layout_width="@dimen/x180"
+        android:layout_height="@dimen/x180"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y73"
+        android:src="@mipmap/logo_bai" />
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x67"
+        android:layout_marginRight="@dimen/x67"
+        android:layout_marginTop="@dimen/y69"
+        android:background="@drawable/bg_login_input">
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y130">
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="@dimen/x34"
+                android:layout_height="@dimen/y52"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                android:src="@mipmap/icon_shouji_lan" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_phone"
+                android:background="@null"
+                android:hint="手机号"
+                android:textColor="#939393"
+                android:textSize="@dimen/x30" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/devider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl_phone"
+            android:background="@color/page_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_pass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y130"
+            android:layout_below="@id/devider">
+            <!--android:layout_marginLeft="25dp"-->
+
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+
+            <!--android:layout_marginRight="25dp"-->
+            <ImageView
+                android:id="@+id/iv_lock"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y52"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_marginRight="@dimen/x46"
+                android:src="@mipmap/icon_mima_lan" />
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_lock"
+                android:background="@null"
+                android:hint="验证码"
+                android:textColor="#939393"
+                android:textSize="@dimen/x30" />
+
+            <Button
+                android:id="@+id/getcode"
+                android:layout_width="@dimen/x209"
+                android:layout_height="@dimen/y99"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/y15"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginTop="@dimen/y15"
+                android:alpha="0.9"
+                android:background="@drawable/selector_bg_blue"
+                android:text="获取验证码"
+                android:textColor="@drawable/selector_btn_white_tx_"
+                android:textSize="@dimen/x30" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/devider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl_pass"
+            android:background="@color/page_bg" />
+        <!--radio group-->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devider2"
+            android:layout_marginLeft="@dimen/x14"
+            android:layout_marginRight="@dimen/x14">
+
+            <RadioGroup
+                android:id="@+id/check_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/y22"
+                android:layout_marginTop="@dimen/y22"
+                android:background="@null"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ck1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y86"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/x14"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:gravity="center"
+
+                    android:text="厂家"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/x32" />
+
+                <RadioButton
+                    android:id="@+id/ck2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y86"
+                    android:layout_marginRight="@dimen/x14"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:gravity="center"
+
+                    android:text="经销商"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/x32" />
+
+                <RadioButton
+                    android:id="@+id/ck3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y86"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="代理商"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/x32" />
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_input"
+        android:layout_marginTop="@dimen/y35">
+
+        <CheckBox
+            android:paddingRight="@dimen/x21"
+            android:id="@+id/cb_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x81"
+            android:button="@drawable/selector_check"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cb_agree"
+            android:text="同意我们的"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x28"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv"
+            android:clickable="true"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x20"
+            android:text="服务条款"
+            android:textColor="@drawable/selector_tx_darkblue"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_agreement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x67"
+        android:layout_marginRight="@dimen/x67"
+        android:layout_marginTop="@dimen/y40"
+        android:alpha="0.9"
+        android:background="@drawable/shape_tag_white"
+        android:paddingBottom="@dimen/y18"
+        android:paddingTop="@dimen/y18"
+        android:text="注册"
+        android:textColor="@color/grey_c7"
+        android:textColorHighlight="@color/white"
+        android:textSize="@dimen/x34" />
+
+    <ImageView
+        android:id="@+id/iv_wechat"
+        android:layout_width="@dimen/x118"
+        android:layout_height="@dimen/y118"
+        android:layout_below="@id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y58"
+        android:src="@mipmap/icon_weixin" />
+
+    <TextView
+        android:id="@+id/wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_wechat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y18"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="微信登录"
+        android:textColor="@drawable/selector_btn_white_tx_"
+        android:textSize="@dimen/x26" />
+</RelativeLayout>

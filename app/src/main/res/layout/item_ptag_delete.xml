@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_marginBottom="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_width="76dp"
+    android:layout_height="31dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<TextView
+    style="@style/white_tx_inbt"
+    android:background="@drawable/shape_tag_blue"
+    android:id="@+id/tv_tag"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:text="hahah" />
+    <ImageView
+        android:id="@+id/iv"
+        android:src="@mipmap/icon_shanchu_w"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

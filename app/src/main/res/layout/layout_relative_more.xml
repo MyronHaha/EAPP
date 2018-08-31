@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:hyphenate="http://schemas.android.com/tools">
+<TextView
+    android:id="@+id/tv_title_more"
+    android:layout_marginLeft="@dimen/x26"
+    android:layout_marginTop="@dimen/y39"
+    android:layout_marginBottom="@dimen/y32"
+    android:drawablePadding="@dimen/x20"
+    android:drawableLeft="@drawable/shape_title_tips" style="@style/guide_tx"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <View
+        android:background="@color/devider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"/>
+    <android.support.v7.widget.RecyclerView
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/rv_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginTop="@dimen/y32"
+        android:layout_marginBottom="@dimen/y32"
+        android:layout_marginRight="@dimen/x29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_e"
+            android:src="@mipmap/img_emei"
+            android:layout_width="@dimen/y103"
+            android:layout_height="@dimen/y103" />
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_toRightOf="@id/iv_e"
+            android:layout_marginLeft="@dimen/x29"
+            android:layout_marginTop="@dimen/y11"
+            android:src="@mipmap/bg_emei_gengduo"
+            android:layout_width="@dimen/x566"
+            android:layout_height="@dimen/y84" />
+        <TextView
+            android:id="@+id/tomore"
+            style="@style/white_tx_inbt"
+            android:layout_marginLeft="@dimen/x80"
+            android:text="fsdfasdfasdf"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/iv_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

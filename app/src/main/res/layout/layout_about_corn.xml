@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:paddingBottom="@dimen/y93"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/y28"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+   <TextView
+       style="@style/news_tx"
+       android:layout_marginTop="@dimen/y35"
+       android:id="@+id/t1"
+       android:text="什么是合币"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+    <TextView
+        style="@style/dt_content"
+        android:lineSpacingMultiplier="1.3"
+        android:layout_marginTop="@dimen/y33"
+        android:id="@+id/content1"
+        android:layout_below="@id/t1"
+        android:text="@string/about_corn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/news_tx"
+        android:layout_marginTop="@dimen/y34"
+        android:id="@+id/t2"
+        android:text="如何获得合币"
+        android:layout_below="@id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/v1"
+        android:layout_marginTop="@dimen/y41"
+        android:layout_below="@id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape_num_point"/>
+    <TextView
+        android:lineSpacingMultiplier="1.3"
+        android:layout_marginLeft="@dimen/x12"
+        style="@style/dt_content"
+        android:layout_marginTop="@dimen/y34"
+        android:id="@+id/content2"
+        android:text="注册认证即注册登记个人信息（手机号、用户名头像邮箱、地址），提交完成即奖励1000合币。 深度认证需上传并提交企业相关信息（企业名、企业法人、地址、联系人联系电话、公司账户、营业执照、法人身份证、经营许可证联系人身份证等），提交完成即奖励5000合币。"
+        android:layout_below="@id/t2"
+     android:layout_toRightOf="@id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+
+        android:id="@+id/v2"
+        android:layout_marginTop="@dimen/y46"
+        android:layout_below="@id/content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_num_point"/>
+    <TextView
+        android:layout_alignBaseline="@id/content"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginLeft="@dimen/x12"
+        style="@style/dt_content"
+        android:layout_marginTop="@dimen/y36"
+        android:id="@+id/content3"
+        android:text="参加医家汇网不定期举办的精彩活动"
+        android:layout_below="@id/content2"
+        android:layout_toRightOf="@id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<!--签到-->
+ <LinearLayout
+     android:id="@+id/ll_sign"
+     android:layout_below="@id/content3"
+     android:layout_marginTop="@dimen/y39"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+  <ImageView
+      android:layout_gravity="center_vertical"
+      android:id="@+id/v3"
+android:backgroundTint="@color/colorPrimary"
+      android:layout_below="@id/content2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/shape_num_point"/>
+  <TextView
+      android:layout_gravity="center_vertical"
+      android:layout_alignBaseline="@id/content"
+      android:lineSpacingMultiplier="1.5"
+      android:layout_marginLeft="@dimen/x12"
+ android:textColor="@color/colorPrimary"
+      android:textSize="@dimen/x28"
+      android:id="@+id/content_4"
+      android:text="每日签到可获 10 豆"
+      android:layout_below="@id/content2"
+      android:layout_toRightOf="@id/v2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <Button
+      style="?android:attr/borderlessButtonStyle"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="@dimen/x12"
+      android:textColor="@drawable/selector_btn_white_tx_"
+      android:textSize="@dimen/x25"
+      android:id="@+id/bt_sign"
+      android:text="现在签到"
+      android:background="@drawable/selector_round_blue27"
+      android:layout_width="@dimen/x162"
+      android:layout_height="@dimen/y54" />
+ </LinearLayout>
+ <!--会员-->
+ <LinearLayout
+     android:layout_below="@id/ll_sign"
+     android:layout_marginTop="@dimen/y39"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+  <ImageView
+      android:layout_gravity="center_vertical"
+      android:id="@+id/v4"
+      android:backgroundTint="@color/bg_yel_light"
+      android:layout_below="@id/content2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/shape_num_point"/>
+  <TextView
+      android:layout_gravity="center_vertical"
+      android:layout_alignBaseline="@id/content"
+      android:lineSpacingMultiplier="1.5"
+      android:layout_marginLeft="@dimen/x12"
+      android:textColor="@color/bg_yel_light"
+      android:textSize="@dimen/x28"
+      android:id="@+id/content_5"
+      android:text="开通会员"
+      android:layout_below="@id/content2"
+      android:layout_toRightOf="@id/v2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <Button
+      style="?android:attr/borderlessButtonStyle"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="@dimen/x12"
+      android:textColor="@drawable/selector_btn_white_tx_"
+      android:textSize="@dimen/x25"
+      android:id="@+id/bt_vip"
+      android:text="马上开通"
+      android:background="@drawable/selector_round_yellow"
+      android:layout_width="@dimen/x162"
+      android:layout_height="@dimen/y54" />
+ </LinearLayout>
+</RelativeLayout>
+</ScrollView>

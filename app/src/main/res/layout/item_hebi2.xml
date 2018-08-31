@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y118"
+    android:layout_marginRight="@dimen/x14"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x26">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:text="sjdlkf"
+        android:id="@+id/title"
+        style="@style/tx_qxzs_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="fjsdlkfjkls"
+        android:id="@+id/count"
+        style="@style/hebi_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:text="fsdjklfj"
+        android:id="@+id/time"
+        style="@style/vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginTop="@dimen/y10"
+        android:gravity="bottom" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_alignParentBottom="true"
+        android:background="@color/page_bg" />
+</RelativeLayout>

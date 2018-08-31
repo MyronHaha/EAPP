@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/bgmargin13"
+    android:layout_marginRight="@dimen/bgmargin13"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bgmargin8"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="@dimen/bgmargin8"
+        android:adjustViewBounds="true"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_zsxq" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/guide_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv"
+            android:text="hahah" />
+
+        <TextView
+            android:id="@+id/remarks"
+            style="@style/guilde_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bgmargin8"
+            android:text="hahah" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_state"
+        style="@style/tab_tx_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/bgmargin13"
+        android:background="@drawable/shape_tag_blue"
+        android:paddingBottom="@dimen/bgmargin5"
+        android:paddingLeft="@dimen/bgmargin9"
+        android:paddingRight="@dimen/bgmargin9"
+        android:paddingTop="@dimen/bgmargin5"
+        android:text="接受"
+        android:textColor="@color/white" />
+    <TextView
+        android:layout_toLeftOf="@+id/tv_state"
+        android:id="@+id/tv_state2"
+        style="@style/tab_tx_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/bgmargin13"
+        android:background="@drawable/shape_tag_blue"
+        android:paddingBottom="@dimen/bgmargin5"
+        android:paddingLeft="@dimen/bgmargin9"
+        android:paddingRight="@dimen/bgmargin9"
+        android:paddingTop="@dimen/bgmargin5"
+        android:text="拒绝"
+        android:textColor="@color/white" />
+</RelativeLayout>

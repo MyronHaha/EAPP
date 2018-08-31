@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="116dp"
+    android:layout_marginRight="15dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/tv_tag"-->
+            <!--android:layout_width="137dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:maxWidth="137dp"-->
+            <!--android:maxHeight="92dp"-->
+            <!--android:src="@mipmap/img_nothingbg2"-->
+            <!--android:textColor="@color/colorPrimary" />-->
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+      android:layout_centerVertical="true"
+            android:src="@mipmap/img_nothingbg2"
+            android:adjustViewBounds="true"
+            android:id="@+id/iv_hall"
+            android:maxHeight="85dp"
+            android:maxWidth="137dp"
+            android:layout_height="wrap_content"
+            android:layout_width="137dp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_below="@+id/r1"
+            android:id="@+id/tv"
+            style="@style/tx_qxzs_bt"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="mingzifsdfasdfasdfasd"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginRight="8dp"
+        android:id="@+id/more"
+        style="@style/zt_tx_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/rl"
+        android:background="@color/white"
+        android:ems="1"
+        android:text="继续滑动加载全部"
+        android:visibility="gone" />
+
+</RelativeLayout>

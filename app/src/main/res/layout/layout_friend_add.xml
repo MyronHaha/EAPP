@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hyphenate="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hyphenate:titleBarLeftImage="@mipmap/icon_fanhui" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/bgmargin17"
+            android:layout_marginLeft="@dimen/bgmargin13"
+            android:layout_marginRight="@dimen/bgmargin15"
+            android:layout_marginTop="@dimen/bgmargin17"
+            android:adjustViewBounds="true"
+            android:maxHeight="65dp"
+            android:maxWidth="65dp"
+            android:src="@mipmap/img_head" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/guide_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/bgmargin8"
+                android:text="myron" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/name"
+                android:layout_toRightOf="@id/name"
+                android:text="Lv1"
+                android:textColor="#3db0ff"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="@dimen/bgmargin10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/bgmargin5"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="14dp"
+                    android:maxWidth="16dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_vip_b" />
+
+                <TextView
+                    android:id="@+id/tv_vip"
+                    style="@style/vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_unvip"
+                    android:text="VIP" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+<!--备注-->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/guide_tx"
+            android:layout_marginRight="@dimen/bgmargin48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bgmargin19"
+            android:layout_marginLeft="@dimen/bgmargin14"
+            android:layout_marginTop="@dimen/bgmargin19"
+            android:text="备注设置" />
+
+        <EditText
+            android:id="@+id/et_remarks"
+            style="@style/feedback_tx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入好友备注" />
+    </LinearLayout>
+    <!--验证-->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/guide_tx"
+            android:layout_marginRight="@dimen/bgmargin48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bgmargin19"
+            android:layout_marginLeft="@dimen/bgmargin14"
+            android:layout_marginTop="@dimen/bgmargin19"
+            android:text="验证信息" />
+
+        <EditText
+            android:id="@+id/et_info"
+            style="@style/feedback_tx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请填写验证信息" />
+    </LinearLayout>
+<!--个性签名-->
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/guide_tx"
+            android:layout_marginRight="@dimen/bgmargin48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bgmargin19"
+            android:layout_marginLeft="@dimen/bgmargin14"
+            android:layout_marginTop="@dimen/bgmargin19"
+            android:text="个性签名" />
+
+        <TextView
+            android:id="@+id/tv_signature"
+            style="@style/feedback_tx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+          android:text="签名"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/guide_tx"
+            android:layout_marginRight="@dimen/bgmargin64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bgmargin19"
+            android:layout_marginLeft="@dimen/bgmargin14"
+            android:layout_marginTop="@dimen/bgmargin19"
+            android:text="常驻地" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            style="@style/feedback_tx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="地区"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/bgmargin13"
+        android:layout_marginLeft="@dimen/bgmargin13">
+        <Button
+            android:id="@+id/bt_add"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            style="@style/guide_tx"
+            android:background="@drawable/selector_bg_blue"
+            android:text="添加好友"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

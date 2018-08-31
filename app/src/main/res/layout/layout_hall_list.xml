@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y40"
+                android:layout_gravity="left"
+         android:layout_marginLeft="@dimen/x25">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y36"
+                    android:src="@mipmap/icon_fanhui" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/search"
+                style="@style/guilde_order_num"
+                android:layout_width="@dimen/x501"
+                android:layout_height="@dimen/y56"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_tag_grey"
+                android:drawableRight="@mipmap/icon_sousuo"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left"
+                android:hint="输入关键词"
+                android:paddingBottom="@dimen/y12"
+                android:paddingLeft="@dimen/x14"
+                android:paddingRight="@dimen/x16"
+                android:paddingTop="@dimen/y12" />
+
+
+        </android.support.v7.widget.Toolbar>
+    </FrameLayout>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head" />
+
+</LinearLayout>

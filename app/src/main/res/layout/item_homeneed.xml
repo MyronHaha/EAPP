@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/devider"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x26"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/y30"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/y38"
+            android:layout_alignBaseline="@id/iv_user"
+            android:layout_toRightOf="@id/iv_user"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user"
+                style="@style/dt_tx_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y10" />
+
+            <TextView
+                android:id="@+id/tv_ago"
+                style="@style/dt_tx_ago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user"
+                android:layout_toRightOf="@id/iv_user" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x26"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="15"
+                style="@style/dt_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                  android:id="@+id/tv_liulan"
+                android:layout_toRightOf="@+id/iv_liulan" />
+
+            <ImageView
+                android:src="@mipmap/icon_liulan"
+                android:id="@+id/iv_liulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x38" />
+      <FrameLayout
+          android:id="@+id/moreclick"
+          android:layout_marginLeft="@dimen/x10"
+          android:layout_toRightOf="@+id/tv_liulan"
+          android:clickable="true"
+          android:layout_centerVertical="true"
+          android:layout_width="@dimen/x40"
+          android:layout_height="@dimen/y40">
+          <ImageView
+              android:layout_gravity="center"
+              android:src="@mipmap/icon_xiala2"
+              android:layout_width="@dimen/x16"
+              android:layout_height="@dimen/x8" />
+      </FrameLayout>
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/rl_see"
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y100">
+            <ImageView
+                android:id="@+id/iv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/dt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top1"
+        android:layout_marginBottom="@dimen/y26"
+        android:layout_marginLeft="@dimen/x116"
+        android:layout_marginRight="@dimen/x34" />
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/account_light_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="@dimen/x116"
+        android:layout_marginRight="@dimen/x34"
+        android:layout_marginBottom="@dimen/y38" />
+<View
+    android:layout_below="@id/tv_content"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y2"
+    android:background="@color/page_bg"/>
+</RelativeLayout>

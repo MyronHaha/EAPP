@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/y70"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/y30"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:maxEms="15"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/tv_user"
+        style="@style/dt_tx_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y33"
+        android:layout_toRightOf="@id/iv_user"
+        android:text="usernamefdsfasdfasdfafsdfsdfsdffsdfsdfdffsdfsdf" />
+
+    <TextView
+
+        style="@style/tx_22_9393"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x26"
+        android:layout_marginTop="@dimen/y33"
+        android:text="广告" />
+
+    <RelativeLayout
+
+        android:id="@+id/rl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user"
+        android:layout_marginRight="@dimen/x49"
+        android:layout_marginTop="@dimen/y27"
+        android:layout_toRightOf="@id/iv_user">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            android:id="@+id/iv_adv"
+            android:src="@mipmap/img_yc_bg"
+            android:layout_width="@dimen/x574"
+            android:layout_height="@dimen/y183"
+
+        />
+        <!--4d4c4d-->
+        <TextView
+            android:layout_marginTop="@dimen/y25"
+            android:layout_below="@+id/iv_adv"
+            android:id="@+id/tv_content"
+            style="@style/news_tx"
+            android:layout_width="@dimen/x574"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y26"
+            android:lineSpacingExtra="@dimen/y10"
+            android:text="广告内容地字数过长的时候用广告............" />
+
+        <TextView
+            android:id="@+id/tv_expan"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y50"
+            android:layout_alignBottom="@+id/tv_content"
+            android:layout_alignRight="@+id/tv_content"
+            android:gravity="center"
+            android:text="展开"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_below="@id/rl_content"
+        android:background="@color/page_bg" />
+</RelativeLayout>

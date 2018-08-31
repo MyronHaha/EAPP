@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee"
+
+
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayAble="false"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+            app:banner_pointTopBottomMargin="6dp"
+            app:banner_transitionEffect="alpha" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="13dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="一次性使用静脉留置针"
+                android:textColor="#3d3d3d"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="10dp"
+                android:text="贝朗医疗（上海）国际贸易有限公司"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+        <!--详情-->
+        <!--title-->
+        <RelativeLayout
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:text="详情"
+                android:textColor="#3d3d3d"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        <!--批准文号-->
+        <LinearLayout
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="11dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="批准文号"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_pzwh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="国食药监械（进）字234u0432340"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!--规格-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="13dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="规格"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_gg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="342039482=-=f-w0r9-23"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!--型号-->
+        <LinearLayout
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="11dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="型号"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_xh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="24g"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!--品牌-->
+        <LinearLayout
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal"
+            android:paddingTop="11dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="品牌"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_pp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="贝朗"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!--科室-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:orientation="horizontal"
+            android:paddingTop="11dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="科室"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="支"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!--功能分类-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:orientation="horizontal"
+            android:paddingTop="11dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="功能分类"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ftype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="支"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!--常用分类-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="常用分类"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ctype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="纸包装"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!--说明-->
+        <RelativeLayout
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:text="说明"
+                android:paddingLeft="8dp"
+                android:textColor="#3d3d3d"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        <!--说明-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="13dp"
+            android:paddingRight="3dp"
+            android:paddingTop="14dp">
+
+            <TextView
+                android:id="@+id/tv_sm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="纸包装fsdlkfjlaslkdfjasklfdjlakljlkfsajfdlkajsldkfjaslkjlfksdklflklasdjflkasjd"
+                android:textColor="#939393"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

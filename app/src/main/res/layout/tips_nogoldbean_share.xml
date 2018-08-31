@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:background="@drawable/round_white"
+    android:orientation="vertical" android:layout_width="@dimen/x541"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/y39">
+<TextView
+    android:layout_marginTop="@dimen/y34"
+    android:layout_marginBottom="@dimen/y34"
+    android:textColor="#4d4d4d"
+    android:textSize="@dimen/y34"
+    android:gravity="center"
+    android:id="@+id/tv_title"
+    android:text="置顶会消耗e金豆"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y2"
+    android:background="@color/page_bg"/>
+<ImageView
+    android:layout_marginBottom="@dimen/y17"
+    android:layout_marginTop="@dimen/y26"
+    android:layout_gravity="center_horizontal"
+    android:src="@mipmap/icon_ejindou"
+    android:layout_width="@dimen/x124"
+    android:layout_height="@dimen/y106" />
+    <TextView
+        android:layout_marginBottom="@dimen/y12"
+        android:gravity="center_horizontal"
+        android:text="6"
+        android:textSize="@dimen/x30"
+        android:textColor="#ff4545"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginBottom="@dimen/y44"
+        android:gravity="center_horizontal"
+        android:text="e金豆"
+        android:textColor="#4d4d4d"
+        android:textSize="@dimen/x30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        android:layout_marginLeft="@dimen/x51"
+        android:layout_marginRight="@dimen/x45"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <Button
+         android:layout_marginRight="@dimen/x65"
+         android:textSize="@dimen/x30"
+         android:gravity="center"
+         android:textColor="@drawable/selector_btn_white_tx_"
+         android:text="取消"
+         android:background="@drawable/selector_round_grey"
+         android:layout_width="@dimen/x190"
+         android:layout_height="@dimen/y64" />
+        <Button
+            android:layout_marginRight="@dimen/x65"
+            android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:textColor="@drawable/selector_btn_white_tx_"
+            android:text="分享"
+            android:background="@drawable/selector_round_blue"
+            android:layout_width="@dimen/x190"
+            android:layout_height="@dimen/y64" />
+    </LinearLayout>
+</LinearLayout>

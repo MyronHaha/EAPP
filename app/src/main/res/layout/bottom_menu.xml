@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--底部操作栏 回复 点赞--><!-- 优化 textView取代-->
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@color/color_white"
+android:id="@+id/rl_bottom"
+android:layout_width="match_parent"
+android:layout_height="@dimen/y100">
+<View
+    android:id="@+id/devider2"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y2"
+    android:layout_alignParentTop="true"
+    android:background="@color/devider" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/y26"
+    android:layout_marginTop="@dimen/y26"
+    android:gravity="center">
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/ll_dh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:clickable="false"
+            android:id="@+id/iv_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/x14"
+            android:gravity="center"
+            android:src="@mipmap/icon_dh" />
+        <TextView
+            android:clickable="false"
+            android:id="@+id/tv_dial"
+            style="@style/news_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="电话" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/devider"
+        android:paddingBottom="@dimen/y26"
+        android:paddingTop="@dimen/y26" />
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/ll_liuyan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:clickable="false"
+            android:id="@+id/iv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/x11"
+            android:gravity="center"
+            android:src="@mipmap/icon_huifu" />
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/tv_dianzan"
+            style="@style/news_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="评论" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

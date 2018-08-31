@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/page_bg"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/y30"
+    android:paddingLeft="@dimen/x26"
+    android:paddingRight="@dimen/x26">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="@dimen/x698"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:id="@+id/iv_ding"
+            android:maxHeight="@dimen/y80"
+            android:maxWidth="@dimen/x698"
+            android:src="@mipmap/bg_ztjs_ding"
+            android:layout_width="@dimen/x698"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingLeft="@dimen/x26"
+            android:paddingRight="@dimen/x26"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_ding"
+            android:id="@+id/tx"
+            android:lineSpacingExtra="@dimen/y30"
+            style="@style/dt_content"
+            android:text="    广东合壹汇供应链管理有限公司(简称:合壹汇)是一家专注于服务医疗器械行业的供应链管理企业，公司通过聚合企业、产品、资金及渠道等各类资源，为客户量身定制合理准确的优质供应链服务，打造平台共享、资源协同、抱团共赢的医疗器械行业供应链生态圈。。合聚众力汇通天下。!合壹汇现有股东经销商数量1 00+，与平台合作的伙伴经销商超过500+，有效覆盖广东省医院800+罗全国医院2000+o构建以物流、商流、资金流、信息流四流合一为载体，以生产型供应链服务、流通消费型供应链服务、全球采购中心及产品整合供应链服务、"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:maxHeight="@dimen/y80"
+            android:maxWidth="@dimen/x698"
+            android:adjustViewBounds="true"
+            android:layout_below="@id/tx"
+             android:layout_alignParentBottom="true"
+             android:src="@mipmap/bg_ztjs_di"
+android:scaleType="centerCrop"            android:layout_width="@dimen/x698"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

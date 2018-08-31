@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 第一条 大图-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="@dimen/x24"
+    android:layout_marginRight="@dimen/x24"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_content"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <ImageView
+        android:layout_marginTop="@dimen/y24"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/x678"
+        android:layout_height="wrap_content"
+        android:maxHeight="@dimen/y260"
+        android:maxWidth="@dimen/x678"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv"/>
+
+        <TextView
+            android:layout_below="@id/iv"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="13dp"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/guide_tx"
+  />
+      <RelativeLayout
+          android:id="@+id/rl_bottom"
+          android:layout_below="@id/tv_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/x24">
+          <ImageView
+              android:layout_centerVertical="true"
+              android:id="@+id/iv_see"
+              android:layout_marginRight="@dimen/x8"
+              android:layout_alignParentLeft="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/icon_liulan"/>
+          <TextView
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/iv_see"
+              android:id="@+id/tv_see"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/dt_see"
+              />
+          <TextView
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:id="@+id/tv_ago"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/dt_tx_ago"
+              />
+      </RelativeLayout>
+    <!--<View-->
+        <!--android:id="@+id/devider1"-->
+        <!--android:layout_below="@id/rl_bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="8dp"-->
+        <!--android:background="#efefef" />-->
+</RelativeLayout>

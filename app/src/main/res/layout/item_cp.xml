@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/y29"
+    android:paddingLeft="@dimen/x26"
+    android:paddingRight="@dimen/x26"
+    android:paddingTop="@dimen/y30">
+
+    <FrameLayout
+        android:id="@+id/fl_img"
+        android:layout_marginRight="@dimen/x35"
+        android:layout_width="@dimen/x177"
+        android:layout_height="@dimen/y177">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv"
+            android:layout_width="@dimen/x177"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="@dimen/y177"
+            android:maxWidth="@dimen/x177"
+            />
+    </FrameLayout>
+
+
+    <TextView
+        android:textSize="@dimen/x30"
+        android:id="@+id/title"
+        style="@style/news_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fl_img"
+        android:text="肌酸激酶激素盒" />
+
+    <TextView
+        android:id="@+id/xh"
+        style="@style/my_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/y19"
+        android:layout_toRightOf="@id/fl_img"
+        android:text="型号:" />
+
+    <TextView
+        android:id="@+id/tv_xh"
+        style="@style/my_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" xxxxxx"
+        android:layout_alignBaseline="@+id/xh"
+        android:layout_alignBottom="@+id/xh"
+        android:layout_toRightOf="@+id/xh"
+        android:layout_toEndOf="@+id/xh" />
+    <TextView
+        android:id="@+id/gg"
+        style="@style/my_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xh"
+        android:layout_marginTop="@dimen/y19"
+        android:layout_toRightOf="@id/fl_img"
+        android:text="规格:" />
+
+    <TextView
+        android:id="@+id/tv_gg"
+        style="@style/my_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" xxxxxx"
+        android:layout_alignBaseline="@+id/gg"
+        android:layout_alignBottom="@+id/gg"
+        android:layout_toRightOf="@+id/gg"
+        android:layout_toEndOf="@+id/gg" />
+
+    <TextView
+        android:id="@+id/company"
+        style="@style/my_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gg"
+        android:layout_marginTop="@dimen/y19"
+        android:layout_toRightOf="@id/fl_img"
+        android:text="龙之杰fsdfsdfsf有限公司" />
+
+</RelativeLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/page_bg"/>
+</LinearLayout>

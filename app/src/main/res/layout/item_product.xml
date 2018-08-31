@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="122dp"
+    android:background="@color/white">
+
+  <RelativeLayout
+      android:id="@+id/top1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/guide1"
+      android:background="@color/white">
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:maxWidth="86dp"
+        android:maxHeight="86dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/img_nothingbg2" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/iv_product">
+
+      <TextView
+          android:id="@+id/tv_info"
+          style="@style/item_zs_info"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:singleLine="true"
+          android:ellipsize="end"
+          android:maxEms="10"
+          android:text="" />
+
+      <TextView
+          android:id="@+id/tv_ago"
+          style="@style/dt_tx_ago"
+          android:layout_marginRight="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@id/tv_info"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:text="2小时前" />
+
+      <ImageView
+          android:visibility="gone"
+          android:id="@+id/iv_delete"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dp"
+          android:src="@mipmap/icon_delete" />
+
+      <RelativeLayout
+          android:id="@+id/rl_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_info"
+          android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/gg"
+            style="@style/tab_tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="规格:" />
+
+        <TextView
+            android:maxEms="9"
+           android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/tv_gg"
+            style="@style/tab_tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/gg"
+            android:text="" />
+      </RelativeLayout>
+
+      <RelativeLayout
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/rl_1"
+          android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/adv"
+            style="@style/tab_tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="优势:" />
+
+        <TextView
+            android:ellipsize="end"
+            android:maxEms="9"
+           android:singleLine="true"
+            android:id="@+id/tv_adv"
+            style="@style/tab_tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/adv"
+            android:text="" />
+      </RelativeLayout>
+    </RelativeLayout>
+      <android.support.v7.widget.RecyclerView
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:id="@+id/gridView"
+          android:layout_below="@id/rl"
+          android:layout_toRightOf="@id/iv_product"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+       <!--<TextView-->
+           <!--android:layout_toRightOf="@id/iv_product"-->
+           <!--android:id="@+id/tv_edit"-->
+           <!--android:layout_below="@id/gridView"-->
+           <!--android:text="编辑"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_below="@id/gridView"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:id="@+id/tv_invisible"-->
+        <!--android:layout_toRightOf="@id/tv_edit"-->
+        <!--android:text="下架"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+  </RelativeLayout>
+  <View
+      android:background="@color/page_bg"
+      android:layout_marginTop="18dp"
+
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_alignParentBottom="true"/>
+</RelativeLayout>

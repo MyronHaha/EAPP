@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3db0ff</color>
+    <color name="color_pmy_holo">#60187fc6</color>
+    <color name="colorPrimaryDark">#FF0380D6</color>
+    <color name="colorAccent">#3db0ff</color>
+    <color name="color_bar_title">#fffefe</color>
+    <color name="white">#fffefe</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_ff3d3d">#ff3d3d</color>
+    <color name="Color_Red">#ffff4444</color>
+    <color name="tx_primary">#4d4d4d</color>
+    <color name="tx_primary_click">#dcd9d9</color>
+    <color name="tx_normal_light">#939393</color>
+    <!-- tab -->
+    <color name="untab_tx">#4d4d4d</color>
+    <color name="tab_tx">#3db0ff</color>
+    <!-- page bg-->
+    <color name="page_bg">#efeeee</color>
+    <!--guide tx-->
+    <color name="guide_tx">#4d4d4d</color>
+    <!--guilde devider-->
+    <color name="devider">#e3e3e3</color>
+    <color name="devider1">#e4e3e2</color>
+    <color name="grey_c7">#c7c7c7</color>
+    <color name="home_bar_text_push">#ff5959</color>
+    <color name="textnormal">#adadad</color>
+    <color name="bg_yel_light">#ffb73a</color>
+    <color name="bg_yel_dark">#f4a00d</color>
+    <color name="tx_yellow">#ffb400</color>
+
+</resources>

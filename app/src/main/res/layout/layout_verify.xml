@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_person"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_below="@+id/head"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/img_grrz" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_company"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_below="@+id/ll_person"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/img_qyrz" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="24dp"
+        android:layout_below="@id/ll_company"
+        style="@style/tx_14_vfy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注：同一个账号只能选择一种认证方式"/>
+</RelativeLayout>

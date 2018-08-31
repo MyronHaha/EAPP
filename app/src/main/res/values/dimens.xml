@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="tool_bar_height">50dp</dimen>
+    <dimen name="rec_w">50dp</dimen>
+
+
+    <!--sys msg-->
+    <dimen name="bgmargin5">5dp</dimen>
+
+    <dimen name="bgmargin8">8dp</dimen>
+    <dimen name="bgmargin9">9dp</dimen>
+    <dimen name="bgmargin10">10dp</dimen>
+    <dimen name="bgmargin12">12dp</dimen>
+    <dimen name="bgmargin13">13dp</dimen>
+    <dimen name="bgmargin14">14dp</dimen>
+    <dimen name="bgmargin15">15dp</dimen>
+    <dimen name="bgmargin17">17dp</dimen>
+    <dimen name="bgmargin19">19dp</dimen>
+    <dimen name="bgmargin48">48dp</dimen>
+    <dimen name="bgmargin64">64dp</dimen>
+    <dimen name="bgmargin69">69dp</dimen>
+    <dimen name="bgmargin81">81dp</dimen>
+</resources>

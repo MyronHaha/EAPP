@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!--small 174 255-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/x174"
+    android:layout_height="@dimen/y225"
+    android:paddingLeft="@dimen/x26"
+    android:paddingTop="@dimen/y26"
+    android:paddingRight="@dimen/x26"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/y16">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/item_zs_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="这里是title啊啊啊" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y15"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="this is content" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/img_nothingbg3"
+            android:layout_width="@dimen/x122"
+            android:layout_height="@dimen/y100" />
+    </LinearLayout>
+
+</LinearLayout>

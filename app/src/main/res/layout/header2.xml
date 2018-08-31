@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/header_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y260">
+  <TextView
+      android:textStyle="bold"
+      android:id="@+id/tv_title"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="@dimen/y17"
+      android:text="火热招商"
+      android:textSize="@dimen/x36"
+      android:textColor="@color/color_white"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_left"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginTop="@dimen/y22"
+        android:layout_alignParentLeft="true"
+        android:text="返回"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/color_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="16dp" />
+    <TextView
+        android:textStyle="bold"
+
+        android:textSize="@dimen/x26"
+        android:textColor="@color/color_white"
+        android:text="设置"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/y22"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

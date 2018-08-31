@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--00cccccc-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#00cccccc"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/y39">
+    <FrameLayout
+        android:layout_width="@dimen/x566"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/y34"
+            android:src="@mipmap/icon_guanbiy"
+            android:layout_width="@dimen/x56"
+            android:layout_height="@dimen/y56" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:background="@drawable/dw_white_round10"
+        android:orientation="vertical"
+        android:layout_width="@dimen/x566"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/y37"
+            android:layout_marginBottom="@dimen/y37"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/y34"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:text="置顶会消耗e金豆"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/page_bg"/>
+        <ImageView
+            android:layout_marginBottom="@dimen/y17"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/icon_jindou1"
+            android:layout_width="@dimen/x94"
+            android:layout_height="@dimen/y101" />
+        <TextView
+            android:layout_marginBottom="@dimen/y10"
+            android:gravity="center_horizontal"
+            android:text="50"
+            android:textSize="@dimen/x28"
+            android:textColor="#ff4545"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginBottom="@dimen/y41"
+            android:gravity="center_horizontal"
+            android:text="e金豆"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/x30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_marginBottom="@dimen/y21"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_round_yellow"
+            android:textColor="@drawable/selector_btn_white_tx_"
+            android:text="分享可置顶一次"
+            android:layout_width="@dimen/x422"
+            android:layout_height="@dimen/y75" />
+        <Button
+            android:id="@+id/bt_maketop"
+            android:layout_marginBottom="@dimen/y21"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_round_blue"
+            android:textColor="@drawable/selector_btn_white_tx_"
+            android:text="确定"
+            android:layout_width="@dimen/x422"
+            android:layout_height="@dimen/y75" />
+        <FrameLayout
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:id="@+id/fl_getbean"
+            android:layout_below="@id/ll_content"
+            android:layout_width="@dimen/x211"
+            android:layout_height="@dimen/y50">
+            <TextView
+                android:textSize="@dimen/x26"
+                android:textColor="@drawable/selector_tx_blue"
+                android:text="获取金豆"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

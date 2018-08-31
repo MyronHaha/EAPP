@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context="com.hyhscm.myron.eapp.activity.Home.ZS_Second">
+    <!--此View用来腾出状态栏的空间，设置颜色与标题栏一致-->
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/header_bg"/>
+
+    <include
+        app:layout_constraintTop_toBottomOf="@id/paddingView"
+        android:id="@+id/header"
+        layout="@layout/header2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y260" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/y197"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:background="@drawable/bg_normal_round_white"
+        android:gravity="center"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/y24"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="@id/line" />
+
+</android.support.constraint.ConstraintLayout>

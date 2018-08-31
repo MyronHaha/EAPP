@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="13dp">
+    <ScrollView android:layout_width="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:layout_height="@dimen/y560"
+        android:id="@+id/sv">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_marginRight="@dimen/x24"
+                android:layout_marginTop="@dimen/y40">
+
+                <TextView
+                    android:textSize="@dimen/x32"
+                    android:textColor="#4d4d4d"
+                    android:textStyle="bold"
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="渠道" />
+
+                <TextView
+                    android:textSize="@dimen/x26"
+                    android:textColor="#939393"
+                    android:id="@+id/seltype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="可多选" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x26"
+                android:layout_marginRight="@dimen/x26" />
+            <View
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/gv"
+                android:background="@color/page_bg" />
+
+            <RelativeLayout
+                android:id="@+id/top2"
+                android:layout_below="@id/v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_marginRight="@dimen/x24"
+                android:layout_marginTop="@dimen/y40">
+
+                <TextView
+                    android:textSize="@dimen/x32"
+                    android:textColor="#4d4d4d"
+                    android:textStyle="bold"
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="医保属性" />
+
+                <TextView
+                    android:textSize="@dimen/x26"
+                    android:textColor="#939393"
+                    android:id="@+id/seltype2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="可多选" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top2"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x26"
+                android:layout_marginRight="@dimen/x26" />
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/gv2"
+                android:background="@color/page_bg" />
+
+            <RelativeLayout
+                android:id="@+id/top3"
+                android:layout_below="@id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_marginRight="@dimen/x24"
+                android:layout_marginTop="@dimen/y40">
+
+                <TextView
+                    android:textSize="@dimen/x32"
+                    android:textColor="#4d4d4d"
+                    android:textStyle="bold"
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="业务类型" />
+
+                <TextView
+                    android:textSize="@dimen/x26"
+                    android:textColor="#939393"
+                    android:id="@+id/seltype3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="可多选" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top3"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x26"
+                android:layout_marginRight="@dimen/x26" />
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/gv3"
+                android:background="@color/page_bg" />
+
+            <RelativeLayout
+                android:id="@+id/top4"
+                android:layout_below="@id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_marginRight="@dimen/x24"
+                android:layout_marginTop="@dimen/y40">
+
+                <TextView
+                    android:textSize="@dimen/x32"
+                    android:textColor="#4d4d4d"
+                    android:textStyle="bold"
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="科室" />
+
+                <TextView
+                    android:textSize="@dimen/x26"
+                    android:textColor="#939393"
+                    android:id="@+id/seltype4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="名称" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top4"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x26"
+                android:layout_marginRight="@dimen/x26" />
+            <View
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/gv4"
+                android:background="@color/page_bg" />
+        </RelativeLayout>
+</ScrollView>
+    <LinearLayout
+
+        android:gravity="center"
+        android:background="#fdfbfb"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/sv"
+        android:paddingLeft="@dimen/x26"
+        android:paddingRight="@dimen/x26"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y16"
+       >
+
+        <Button
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:id="@+id/cancel"
+            android:textColor="#808080"
+            android:textSize="@dimen/x26"
+            android:layout_weight="1"
+            android:layout_width="@dimen/x151"
+            android:layout_height="@dimen/y70"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shaixuan_btbg_cancel"
+            android:text="取消" />
+
+        <Button
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:id="@+id/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x26"
+            android:layout_weight="1"
+            android:layout_width="@dimen/x151"
+            android:layout_height="@dimen/y70"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shaixuan_btbg_sure"
+            android:text="确定" />
+    </LinearLayout>
+
+</RelativeLayout>

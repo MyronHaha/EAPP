@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x24"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_height="@dimen/y56">
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/icon_texun"
+        android:layout_width="@dimen/x126"
+        android:layout_height="@dimen/y26"
+        />
+    <TextView
+        android:textColor="#ff5050"
+        android:layout_marginLeft="@dimen/x10"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/x22"
+        android:text="求购"
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <!--<TextView-->
+        <!--android:singleLine="true"-->
+        <!--android:ellipsize="marquee"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:id="@+id/tv_content"-->
+        <!--android:text="hello worldfsdfsfdfsdfdfffffffffffffffffffffffffffffffffff"-->
+        <!--android:layout_marginLeft="@dimen/x12"-->
+        <!--android:textSize="@dimen/x22"-->
+        <!--android:textColor="#4d4c4d"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/tv_content"
+        android:text="hello worldfsdfsfdfsdfdfffffffffffffffffffffffffffffffffff"
+        android:layout_marginLeft="@dimen/x12"
+        android:textSize="@dimen/x22"
+        android:textColor="#4d4c4d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

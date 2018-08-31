@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">e链网</string>
+    <string name="about_corn">"合币是合壹汇向线上平台会员提供的一种抵用券，1合币等于1元，1000个合币即可抵扣1000元，持有合币的会员不仅可在医家汇线上平台采购时享受现金抵扣，更可优惠享受合壹汇举办的各类活动，还可用于打赏其他用户，绝对的“币”不可少！"</string>
+    <string name="phone_num">020-37104018</string>
+    <string name="product_adv">优势：%1$2s</string>
+    <string name="str_more">更多%1$s</string>
+    <string name="contact_info">联系方式: %1$s</string>
+    <string name="prompt_str">确认\n\r%1$s?</string>
+    <!--%n$ms：代表输出的是字符串，n代表是第几个参数，设置m的值可以在输出之前放置空格 -->
+</resources>

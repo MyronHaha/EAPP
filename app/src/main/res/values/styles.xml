@@ -1,0 +1,312 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="fontPath">fonts/xingkai.ttf</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!--将Activity的Theme设置成透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+    </style>
+
+    <!-- 为 Theme 设置背景图 -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/img_launch</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="popwin_anim_style">
+    <item name="android:windowEnterAnimation">@anim/pop_show</item>
+    <item name="android:windowExitAnimation">@anim/pop_dismiss</item>
+</style>
+    <!--toolbar-->
+    <style name="toolbar_text">
+        <item name="android:textColor">@color/color_bar_title</item>
+        <item name="android:textSize">@dimen/x34</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <!--guide title-->
+    <style name="guide_tx">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- guilde order num-->
+    <style name="guilde_order_num">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- guilde   器械招商 耗材招商-->
+    <style name="tx_qxzs">
+        <item name="android:textColor">@drawable/selector_btn_tx</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <!-- guilde   器械招商 耗材招商bottom-->
+    <style name="tx_qxzs_bt">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="txinimg">
+        <item name="android:textColor">#fefefe</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="news_tx">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!--好友动态-->
+    <style name="dt_tx_user">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="dt_tx_ago">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x18</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="dt_see">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x18</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="dt_reply">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="dt_content">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="tab_tx_name">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x22</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="tx_22_9393">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x22</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="vp_list_more">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="item_zs_info">
+        <item name="android:textColor">#5e5e5e</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="tag_text">
+        <item name="android:textColor">#3db0ff</item>
+        <item name="android:textSize">@dimen/x18</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="zs_text">
+        <item name="android:textColor">#ff944c</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="zt_text">
+        <item name="android:textColor">#00c4b4</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="news_text">
+        <item name="android:textColor">#ff91c1</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+
+    <style name="vip">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x20</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="tx_username">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="lv_1">
+        <item name="android:textColor">#3db0ff</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="vip1">
+        <item name="android:textColor">#ffd87b</item>
+        <item name="android:textSize">@dimen/x20</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="my_menu1">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="my_menu2">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="my_tx">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="setting_tx">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <!--修改密码字体-->
+    <style name="bt_cp_text">
+        <item name="android:textColor">@drawable/selector_btn_white_tx_</item>
+        <item name="android:textSize">@dimen/x34</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tx_forget">
+        <item name="android:textColor">@drawable/selector_tx_blue</item>
+        <item name="android:textSize">@dimen/x20</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="account_light_tx">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="feedback_tx">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="tx_11_tag">
+
+        <item name="android:textColor">#0094f7</item>
+        <item name="android:textSize">@dimen/x20</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="hebi">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x34</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="hebi_count">
+        <item name="android:textColor">#ff393a</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="grey_tx_inbt">
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="white_tx_inbt">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="tag_input_hint">
+        <item name="android:textColor">#919191</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="zt_tx_title">
+        <item name="android:textColor">#5e5e5e</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="zt_tx_detail">
+        <item name="android:textColor">#939393</item>
+        <item name="android:textSize">@dimen/x18</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="login_white_more">
+        <item name="android:textColor">@drawable/selector_btn_white_tx_</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="bottom_tx">
+        <item name="android:textColor">#4d4d4d</item>
+        <item name="android:textSize">@dimen/x20</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="tx_14_vfy">
+        <item name="android:textColor">#bebebe</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="tx_share_success">
+        <item name="android:textColor">#9b9b9b</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tx_24_9090">
+        <item name="android:textColor">#909090</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+</resources>

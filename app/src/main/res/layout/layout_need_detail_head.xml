@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <View
+        android:layout_below="@id/head"
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y16"
+        android:background="@color/page_bg"/>
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x26"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/y30"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_yc_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/y38"
+            android:layout_toRightOf="@id/iv_user"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user"
+                style="@style/dt_tx_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y10"
+                android:text="用户名" />
+
+            <TextView
+                android:id="@+id/tv_ago"
+                style="@style/dt_tx_ago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user"
+                android:layout_toRightOf="@id/iv_user"
+                android:text="2小时前" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/x26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_see"
+                style="@style/dt_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_liulan"
+                android:text="12" />
+
+            <ImageView
+                android:id="@+id/iv_liulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/y38"
+                android:src="@mipmap/icon_liulan" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--title-->
+    <TextView
+        android:text="fdsf"
+        style="@style/news_tx"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top1"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x34"
+        android:layout_marginTop="@dimen/y26"
+       />
+    <!--content-->
+    <TextView
+        android:text="fdsf"
+        style="@style/dt_tx_user"
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x34"
+        android:layout_marginTop="@dimen/y26"
+      />
+    <!--contact info-->
+    <TextView
+        android:textStyle="bold"
+        style="@style/item_zs_info"
+        android:id="@+id/tv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x34"
+        android:layout_marginTop="@dimen/y26"
+        />
+    <!--pic gridview-->
+    <com.lzy.ninegrid.NineGridView
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x26"
+        android:layout_below="@id/tv_contact"
+        android:id="@+id/nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ngv_gridSpacing="@dimen/x6"
+        app:ngv_maxSize="9"
+        app:ngv_mode="fill"
+        app:ngv_singleImageRatio="1"
+        app:ngv_singleImageSize="@dimen/x240"/>
+    <!--areas list-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x34"
+        android:layout_below="@id/nineGrid"
+        android:id="@+id/rv_areas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y26" />
+    <View
+        android:layout_marginTop="@dimen/y26"
+        android:id="@+id/vv"
+        android:layout_below="@id/rv_areas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:background="@color/page_bg"/>
+    <!--more list-->
+    <include
+        android:id="@+id/layout_more"
+        android:layout_below="@+id/vv"
+        layout="@layout/layout_relative_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/vv2"
+        android:layout_below="@+id/layout_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:background="@color/page_bg"/>
+    <!--title comment-->
+    <TextView
+        android:id="@+id/title_comment"
+        android:text="评论留言"
+   android:layout_below="@+id/vv2"
+    android:layout_marginLeft="@dimen/x26"
+    android:layout_marginTop="@dimen/y39"
+    android:layout_marginBottom="@dimen/y32"
+    android:drawablePadding="@dimen/x20"
+    android:drawableLeft="@drawable/shape_title_tips" style="@style/guide_tx"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <View
+        android:layout_below="@+id/title_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/devider"/>
+
+
+</RelativeLayout>

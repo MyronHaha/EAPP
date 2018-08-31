@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/item_bg"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y87"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:id="@+id/tv_category"
+    android:layout_centerInParent="true"
+    android:drawablePadding="@dimen/x20"
+    style="@style/tx_username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+/>
+     <TextView
+         android:drawablePadding="@dimen/x20"
+         android:id="@+id/more"
+         android:clickable="true"
+         android:layout_marginRight="@dimen/x26"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+ </RelativeLayout>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_marginLeft="@dimen/x26"-->
+        <!--android:layout_marginRight="@dimen/x26"-->
+        <!--android:id="@+id/rv_item"-->
+        <!--android:background="@drawable/catrgory_item_bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->

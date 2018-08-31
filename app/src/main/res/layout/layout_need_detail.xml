@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96">
+
+        <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/id_tool_bar"
+            android:background="?attr/colorPrimary">
+            <LinearLayout
+                android:background="@drawable/ease_common_tab_bg"
+                android:id="@+id/ll_back"
+                android:clickable="true"
+                android:paddingTop="@dimen/y10"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingBottom="@dimen/y10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y36"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_fanhui" />
+            </LinearLayout>
+
+            <TextView
+                android:clickable="true"
+                style="@style/toolbar_text"
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+            <LinearLayout
+                android:clickable="true"
+                android:paddingTop="@dimen/y10"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingBottom="@dimen/y10"
+                android:id="@+id/ll_right"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/x28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/icon_fenxiang"
+
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y36"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:layout_marginBottom="@dimen/y20"
+        android:id="@+id/rv"
+        android:layout_below="@id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+   <include
+       android:layout_alignParentBottom="true"
+       layout="@layout/bottom_menu"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/y100"/>
+
+</RelativeLayout>

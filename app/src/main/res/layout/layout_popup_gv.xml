@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/y26">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y560"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_marginRight="@dimen/x24"
+                android:layout_marginTop="@dimen/y40">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="类别"
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/x32"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/seltype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="可多选"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/x26" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x26"
+                android:layout_marginRight="@dimen/x26"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/sv"
+        android:background="@color/page_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v"
+        android:background="#fdfbfb"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y16"
+        android:paddingLeft="@dimen/x26"
+        android:paddingRight="@dimen/x26"
+        android:paddingTop="@dimen/y26">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/x151"
+            android:layout_height="@dimen/y70"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_weight="1"
+            android:background="@drawable/shaixuan_btbg_cancel"
+            android:text="取消"
+            android:textColor="#808080"
+            android:textSize="@dimen/x26" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="@dimen/x151"
+            android:layout_height="@dimen/y70"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_weight="1"
+            android:background="@drawable/shaixuan_btbg_sure"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x26" />
+    </LinearLayout>
+
+</RelativeLayout>

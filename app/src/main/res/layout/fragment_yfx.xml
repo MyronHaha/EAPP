@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:t1="http://schemas.android.com/tools"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:background="#e4e5e5"
+        android:clipChildren="false">
+        <!--app:banner_pointContainerBackground="@android:color/transparent"-->
+        <!--app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"-->
+        <!--app:banner_pointTopBottomMargin="@dimen/y12"-->
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_guide_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:banner_pageChangeDuration="2000"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_transitionEffect="alpha"
+            app:layout_constraintDimensionRatio="24:10"/>
+        <!--导航-->
+        <com.hyhscm.myron.eapp.view.MyGridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y24"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:background="@drawable/bg_normal_round_white"
+            android:clipChildren="true"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:paddingBottom="@dimen/y20"
+            android:paddingTop="@dimen/y20"
+            app:layout_constraintBottom_toTopOf="@+id/notify"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintDimensionRatio="2.9:1"/>
+        <!--消息banner-->
+        <FrameLayout
+            android:id="@+id/notify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y56"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/y150"
+            android:background="@drawable/dw_white_round"
+            app:layout_constraintTop_toBottomOf="@id/banner_guide_content">
+
+            <com.taobao.library.VerticalBannerView
+                android:id="@+id/notify_banner"
+                android:layout_width="@dimen/x710"
+                android:layout_height="@dimen/y56"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                app:animDuration="900"
+                app:gap="5000" />
+        </FrameLayout>
+        <!--viewpager 求购 代理-->
+        <RelativeLayout
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/x24"
+            android:background="@drawable/bg_normal_round_white"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/notify">
+
+            <!--<com.flyco.tablayout.SlidingTabLayout-->
+                <!--android:id="@+id/tablayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/y84"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--tl:tl_indicator_color="#3db0ff"-->
+                <!--tl:tl_textSelectColor="#3db0ff"-->
+                <!--tl:tl_textUnselectColor="#4d4c4d"-->
+                <!--t1:tl_indicator_style="BLOCK"/>-->
+            <com.flyco.tablayout.SegmentTabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84"
+                android:layout_gravity="center_horizontal"
+                tl:tl_bar_color="@color/colorPrimary"
+                tl:tl_indicator_color="#ffffff"
+                tl:tl_indicator_corner_radius="10dp"
+                tl:tl_textSelectColor="@color/colorPrimary"
+                tl:tl_textUnselectColor="@color/color_white"
+                />
+
+            <com.hyhscm.myron.eapp.view.CustomViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tablayout"
+                android:background="@color/color_white" />
+
+            <TextView
+                android:id="@+id/need_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/y12"
+                android:paddingTop="@dimen/y17"
+                android:text="更多需求"
+                android:textColor="@drawable/selector_btn_tx"
+                android:textSize="@dimen/x28" />
+        </RelativeLayout>
+        <!--广告位-->
+        <FrameLayout
+            android:id="@+id/fl_adv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y125"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/y24"
+            android:background="@color/page_bg"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/adv_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:banner_pageChangeDuration="2000"
+                app:banner_pointAutoPlayAble="true"
+                app:banner_pointContainerBackground="@android:color/transparent"
+                app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+                app:banner_pointTopBottomMargin="@dimen/y10"
+                app:banner_transitionEffect="alpha" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/noAdsText"
+                android:textSize="@dimen/x33"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="此 广 告 位 长 期 招 租"
+                android:background="#448aca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+        <!--招商-->
+        <RelativeLayout
+            android:id="@+id/rl_zs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/y24"
+            android:background="@drawable/bg_normal_round_white"
+            app:layout_constraintTop_toBottomOf="@+id/fl_adv">
+            <!--zxzs title-->
+            <RelativeLayout
+                android:id="@+id/guide1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y92"
+                android:paddingLeft="@dimen/x26"
+                android:paddingRight="@dimen/x28">
+
+                <ImageView
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/y31"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x14"
+                    android:src="@mipmap/icon_zs_c" />
+
+                <TextView
+                    style="@style/zs_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x62"
+                    android:gravity="center"
+                    android:text="最新招商" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_product"-->
+                <!--style="@style/feedback_tx"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="更多招商"-->
+                <!--android:textColor="@drawable/selector_btn_tx" />-->
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_zs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guide1"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/more_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_zs"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/y12"
+                android:paddingTop="@dimen/y17"
+                android:text="更多招商"
+                android:textColor="@drawable/selector_btn_tx"
+                android:textSize="@dimen/x28" />
+        </RelativeLayout>
+        <!--hall-->
+        <RelativeLayout
+            android:id="@+id/rl_hall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/y24"
+            android:background="@drawable/bg_normal_round_white"
+            app:layout_constraintTop_toBottomOf="@+id/rl_zs">
+            <RelativeLayout
+                android:id="@+id/guide2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y92"
+                android:layout_marginTop="@dimen/y16"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/y28"
+                android:paddingLeft="@dimen/x26"
+                android:paddingRight="@dimen/x28">
+
+                <ImageView
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/y38"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x14"
+                    android:src="@mipmap/icon_zt_l" />
+
+                <TextView
+                    style="@style/zt_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x62"
+                    android:text="明星展厅" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/more_hall"-->
+                <!--style="@style/feedback_tx"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="更多展厅"-->
+                <!--android:textColor="@drawable/selector_btn_tx" />-->
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:focusable="false"
+                android:id="@+id/rv_hall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guide2"
+                android:background="@color/white" />
+            <TextView
+                android:id="@+id/more_hall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_hall"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/y12"
+                android:paddingTop="@dimen/y17"
+                android:text="更多展厅"
+                android:textColor="@drawable/selector_btn_tx"
+                android:textSize="@dimen/x28" />
+        </RelativeLayout>
+        <!--news-->
+        <RelativeLayout
+            android:id="@+id/rl_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/y24"
+            android:background="@drawable/bg_normal_round_white"
+            app:layout_constraintTop_toBottomOf="@+id/rl_hall">
+        <RelativeLayout
+            android:id="@+id/guide3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y16"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/y28"
+            android:paddingLeft="@dimen/x26"
+            android:paddingRight="@dimen/x28"
+            android:paddingTop="@dimen/y28">
+
+            <ImageView
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y38"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_zx_f" />
+
+            <TextView
+                style="@style/news_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x62"
+                android:gravity="center_vertical"
+                android:text="医械资讯" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_num"-->
+                <!--style="@style/guilde_order_num"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="更多资讯" />-->
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none"
+           android:layout_below= "@id/guide3" />
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_news"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/y12"
+                android:paddingTop="@dimen/y17"
+                android:text="更多资讯"
+                android:textColor="@drawable/selector_btn_tx"
+                android:textSize="@dimen/x28" />
+        </RelativeLayout>
+        <!--dial-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/page_bg"
+            android:paddingBottom="@dimen/y12"
+            android:paddingLeft="@dimen/x26"
+            android:paddingRight="@dimen/x26"
+            android:paddingTop="@dimen/y12"
+            app:layout_constraintTop_toBottomOf="@id/rl_news">
+
+            <Button
+                android:id="@+id/dial"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y66"
+                android:layout_marginBottom="@dimen/y30"
+                android:background="@drawable/round_blue_btn"
+                android:text="联系我们：020-37104018（点击拨打）"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x24" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

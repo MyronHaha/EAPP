@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp">
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_guide_content"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        app:banner_pageChangeDuration="1000"
+        app:banner_pointAutoPlayAble="true"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_pointTopBottomMargin="6dp"
+        app:banner_transitionEffect="alpha" />
+    <!--菜单-->
+    <View
+        android:id="@+id/d_top"
+        android:layout_below="@id/banner_guide_content"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/page_bg"/>
+    <com.hyhscm.myron.eapp.view.MyGridView
+        android:background="@color/white"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:paddingBottom="14dp"
+        android:layout_below="@id/d_top" />
+        <!--android:paddingBottom="14dp"-->
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/guide1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/gridView"
+        android:background="@color/white"
+        android:paddingBottom="14dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="14dp"
+        android:paddingTop="14dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="7dp"
+            android:src="@mipmap/icon_sy_xq" />
+
+        <TextView
+            style="@style/guide_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="31dp"
+            android:text="我的招商" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/guilde_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="12个需求" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/devider2"
+        android:layout_below="@id/guide1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/devider"/>
+    <LinearLayout
+        android:id="@+id/guide2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/devider2"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:background="@drawable/selector_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="29dp"
+            android:paddingRight="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_top2"
+                    style="@style/tx_qxzs"
+                    android:textColor="@drawable/selector_btn_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:text="器材招商" />
+
+                <TextView
+                    android:id="@+id/tv_zs_num"
+                    style="@style/tx_qxzs_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_top2"
+                    android:text="3个招商" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/icon_sy_qxzs" />
+
+            <ImageView
+                android:id="@+id/iv_dot1"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/circle_dot_red_bg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/devider" />
+
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="29dp"
+            android:paddingRight="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_top"
+                    style="@style/tx_qxzs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:text="耗材招商" />
+
+                <TextView
+                    android:id="@+id/tv_hc_num"
+                    style="@style/tx_qxzs_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_top"
+                    android:text="6个招商" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/icon_sy_hczs" />
+
+            <ImageView
+                android:id="@+id/iv_dot2"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/circle_dot_red_bg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/devider"
+        android:layout_below="@id/guide2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/devider"/>
+    <TextView
+        android:background="@color/white"
+        android:clickable="true"
+        android:id="@+id/tv_all_order"
+        android:paddingTop="14dp"
+        android:paddingBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/devider"
+        style="@style/tx_qxzs"
+        android:text="全部"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
